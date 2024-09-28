@@ -1,0 +1,184 @@
+.div1 {
+    display: flex;
+    width: 750px;
+    height: 600px;
+    background-color: rgb(253, 253, 253);
+    margin: auto;
+    top: 50%;
+    bottom: 50%;
+    border-radius: 10%;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+ 
+    
+}
+
+
+.div1 h2 {
+    position: relative;
+    left: 295px;
+}
+
+
+.input {
+    position: relative;
+    top: 100px;
+    width: 250px;
+    right: 100px;
+    align-items: center;
+    
+}
+
+.input label {
+    position: relative;
+    left: -10px;
+}
+
+
+
+
+.div1 label {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px; 
+    margin-left: 10px; 
+}
+
+
+.source {
+    position: relative;
+    top: 230px;
+    right: 320px;
+    width: 470px;
+}
+
+.source label {
+    position: absolute;
+    left: -40px;
+    top:-10px;
+    width: 250px;
+    display: inline;
+    
+    
+}
+
+
+.target {
+    width: 150px;
+    position: relative;
+    top: 150px;
+}
+
+
+.target label{
+    position: absolute;
+    top: 135px;
+    right: 430px;
+    width: 250px;
+
+}
+
+#input-num {
+    width: 300px;
+    height: 40px;
+    font-size: 17px;
+    text-indent: 10px;
+    border-radius: 8px;
+    border-width: 1.5px;
+    border-style: solid;           
+    border-color: #b5b7bb; 
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+#options {
+    position: relative;
+    left: 210px;
+    top: -12px;
+    width: 130px;
+    height: 25px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    
+}
+
+
+#options:hover {
+    border-color: #888;
+}
+
+#options:focus {
+    border-color: #3498db; 
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); 
+}
+
+
+#options2 {
+    position: relative;
+    right: 270px;
+    top: 130px;
+    width: 130px;
+    height: 25px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    
+}
+
+
+#options2:hover {
+    border-color: #888;
+}
+
+#options2:focus {
+    border-color: #3498db; 
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); 
+}
+
+
+p {
+    position: relative;
+    left: -650px;
+    top: 470px;
+
+}
+
+.div1 button {
+    position: absolute;
+    top:450px;
+    right: 650px;
+    font-size: 20px;
+    background-color: #2a8f28;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.div1 button:hover {
+    position: absolute;
+    background-color: #1f731d;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
