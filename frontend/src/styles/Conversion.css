@@ -160,7 +160,7 @@ p {
 .div1 button {
     position: absolute;
     top:450px;
-    right: 650px;
+    right: 890px;
     font-size: 20px;
     background-color: #2a8f28;
     color: white;
@@ -173,7 +173,6 @@ p {
 }
 
 .div1 button:hover {
-    position: absolute;
     background-color: #1f731d;
     color: white;
     font-weight: bold;
