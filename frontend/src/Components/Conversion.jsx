@@ -61,7 +61,7 @@ const Conversion = () => {
 
         <>
             <div className='div1'>
-                <h2>Conversion</h2>
+                <h2>Conversion Interface</h2>
 
                 <div className='input'>
                     <label for="options">Please enter number to convert:</label>
@@ -88,9 +88,13 @@ const Conversion = () => {
                     </select>
                 </div>
 
-                <p>{convertedNumber}</p>
-
                 <button onClick={handleConvert}>Convert</button>
+
+                <div className='result'>
+                    <label for="Results">Converted Result:</label>
+                    <input type="text" id="result-box" name="textbox2" placeholder=" Your converted number will show up here..." value ={convertedNumber}/>
+                    
+                </div>
 
             </div>
 
