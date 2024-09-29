@@ -1,13 +1,13 @@
 import '../styles/Conversion.css';
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const Conversion = () => {
-
-
 
     const [userInput,setUserInput] = useState('');
     const [selectedSource,setSelectedSource] = useState('10');
     const [selectedTarget,setSelectedTarget] = useState('10');
+    const [convertedNumber, setConvertedNumber] = useState('');
 
     const handleInputChange = (e) => {
         setUserInput(e.target.value);
@@ -21,10 +21,33 @@ const Conversion = () => {
         setSelectedTarget(e.target.value);
     }
 
-    const handleConvert = () => {
+    const handleConvert = async () => {
         console.log("The number you wanted to convert is: ",userInput);
         console.log("The base you want to convert from: ",selectedSource);
         console.log("The base you wanty to convert to: ",selectedTarget);
+
+        try{
+            const dataToSend = {
+                input_num: userInput,
+                source_base: selectedSource,
+                target_base: selectedTarget,
+            };
+            
+
+
+            const response = await axios.post(`${process.env.REACT_APP_FLASK_API_URL}`,dataToSend);
+
+            setConvertedNumber(response.data.converted_num);
+            console.log("In JS converted number is:", convertedNumber);
+            console.log('Response from Flask:', response.data);
+
+
+        } 
+        
+        catch(error){
+            console.error('Error sending data to Flask:', error);
+
+        }
 
 
 
@@ -65,7 +88,7 @@ const Conversion = () => {
                     </select>
                 </div>
 
-                <p>Result: </p>
+                <p>{convertedNumber}</p>
 
                 <button onClick={handleConvert}>Convert</button>
 
